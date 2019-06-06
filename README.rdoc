@@ -1,9 +1,5 @@
 = RubyOvh
 
-
-Info : https://github.com/rivsc/Beautiful-Scaffold
-Demo : http://demo.beautiful-scaffold.escarworld.com/
-
 == Install
 
 Add this in your Gemfile :
