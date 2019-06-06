@@ -1,0 +1,18 @@
+= RubyOvh
+
+
+Info : https://github.com/rivsc/Beautiful-Scaffold
+Demo : http://demo.beautiful-scaffold.escarworld.com/
+
+== Install
+
+Add this in your Gemfile :
+
+    gem 'ruby_ovh'
+
+== Usage
+
+See source code on github.
+
+Rivsc.
+
