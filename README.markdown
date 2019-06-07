@@ -8,9 +8,11 @@ Add this in your Gemfile :
 gem 'ruby_ovh'
 ```
 
-## Usage
+## Prerequisites
 
-The first time you need a consumer key. You can generate as follow :
+1. Create your app at Ovh : [https://eu.api.ovh.com/createApp/](https://eu.api.ovh.com/createApp/) and get an application_key (ak) and an application_secret (as).
+
+2. The first time you need a consumer_key (ck). You can generate as follow (thanks to your application_key and application_secret) :
 
 ```ruby
 client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY' })
@@ -18,6 +20,8 @@ response = client.generate_consumer_key
 puts "You need to memorize your consumer_key : #{response[:consumer_key]}"
 puts "You need visit this address in your browser in order to activate your consumer key #{response[:validation_url]}"
 ```
+
+## Usage
 
 After that, thanks to your consumer key, you can call Ovh API as follow :
 
@@ -45,7 +49,6 @@ client.query({ url: "/domain/zone/mydomain.org/record" , method: "POST", query: 
 ```
 
 List Ovh API : [https://eu.api.ovh.com/console/#/](https://eu.api.ovh.com/console/#/)
-
 
 Rivsc.
 
