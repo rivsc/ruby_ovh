@@ -99,12 +99,12 @@ module RubyOvh
     # == Example
     #
     # # GET query
-    # client.signature_timestamp({ url: "/domain/zone/mydomain.org/record?fieldType=A" , method: "GET", query: {} })
+    # client.query({ url: "/domain/zone/mydomain.org/record?fieldType=A" , method: "GET", query: {} })
     #
     # OR
     #
     # # POST query
-    # client.signature_timestamp({ url: "/domain/zone/mydomain.org/record" , method: "POST", query: {
+    # client.query({ url: "/domain/zone/mydomain.org/record" , method: "POST", query: {
     #   "subDomain": "blog",
     #   "target": "XX.X.X.XXX",
     #   "fieldType": "A"
