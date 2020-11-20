@@ -13,7 +13,7 @@ gem 'ruby_ovh'
 1. Create your app at Ovh : [https://eu.api.ovh.com/createApp/](https://eu.api.ovh.com/createApp/) and get an application_key (ak) and an application_secret (as).
 2. The first time you need a consumer_key (ck). You can generate as follow (thanks to your application_key and application_secret) :
 
-### Create a consumer_key with default AccessRules (GET/POST/PUT)
+#### Create a consumer_key with default AccessRules (GET/POST/PUT)
 
 ```ruby
 client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY' })
@@ -22,7 +22,9 @@ puts "You need to memorize your consumer_key : #{response[:consumer_key]}"
 puts "You need visit this address in your browser in order to activate your consumer key #{response[:validation_url]}"
 ```
 
-### OR create a consumer_key with specific AccessRules (here GET/POST/PUT/DELETE)
+### OR
+
+#### create a consumer_key with specific AccessRules (here GET/POST/PUT/DELETE)
 
 ```ruby
 client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY', access_rules: [
