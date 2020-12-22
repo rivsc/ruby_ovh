@@ -27,7 +27,8 @@ puts "You need visit this address in your browser in order to activate your cons
 #### create a consumer_key with specific AccessRules (here GET/POST/PUT/DELETE)
 
 ```ruby
-client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY', access_rules: [
+client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY' })
+response = client.generate_consumer_key({ access_rules: [
                 {
                     "method": "GET",
                     "path": "/*"
@@ -42,7 +43,6 @@ client = RubyOvh::Client.new({application_key: 'XXXX', application_secret: 'YYYY
                     "path": "/*"
                 }
             ] })
-response = client.generate_consumer_key
 puts "You need to memorize your consumer_key : #{response[:consumer_key]}"
 puts "You need visit this address in your browser in order to activate your consumer key #{response[:validation_url]}"
 ```
