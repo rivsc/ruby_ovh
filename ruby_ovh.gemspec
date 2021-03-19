@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Sylvain Claudel"]
   s.email       = 'claudel.sylvain@gmail.com'
   s.files       = ["lib/ruby_ovh.rb"]
-  s.homepage    = 'https://rivsc.space'
+  s.homepage    = 'https://blog.rivsc.ovh'
   s.license     = 'MIT'
   s.add_runtime_dependency 'faraday'
 end
